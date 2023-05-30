@@ -126,7 +126,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Compares multiple models by a variety of metrics using multithreaded data processing')
     parser.add_argument('--models_root', dest='models_root', help='path to directory with models predictions', default='savam_from_')
     parser.add_argument('--gt_root', dest='GT', help='path to directory with Ground Truth saliency maps and fixations', default='savam_GT')
-    parser.add_argument('--dont_use_domain_adaptation', dest='dont_use_domain_adaptation', action='store_true', help='specifies don\'t to use domain adaptation')
+    parser.add_argument('--dont_use_domain_adaptation', dest='dont_use_domain_adaptation', action='store_true', help='specifies don\'t use domain adaptation')
     parser.add_argument('--num_workers', dest='num_workers', type=int, help='number of used threads', default=1)
     args = parser.parse_args()
     models_root = args.models_root
