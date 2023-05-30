@@ -2,6 +2,7 @@
 ### Explore the best methods of video saliency prediction (VSP) algorithms
 This repository provides the code for work:
 [Video Saliency Prediction Benchmark](https://videoprocessing.ai/benchmarks/video-saliency-prediction.html)
+(Will be moved to [MSU Video Group](https://github.com/msu-video-group))
 
 To install the dependencies into your conda environment with `python 3.8`, run:
 ```bash
