@@ -190,7 +190,7 @@ if __name__ == '__main__':
                 result[i].append(j[i])
 
         model_res = {'model': model_root}
-        [model_res.update({key: np.mean(result[key])}) for key in result.keys()]
+        [model_res.update({key: [np.mean(result[key])]}) for key in result.keys()]
         header = not path.exists(f'{result_name}.csv')
         pd.DataFrame.from_dict(model_res, orient='columns').to_csv(f'{result_name}.csv', mode='a', header=header, index=False)
         print(model_res)
